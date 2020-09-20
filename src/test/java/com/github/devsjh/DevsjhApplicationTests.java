@@ -1,0 +1,12 @@
+package com.github.devsjh;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class DevsjhApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+}

@@ -1,0 +1,22 @@
+* 스프링 부트 배치의 기본 구조
+: Read, Process, Write
+: 원하는 조건의 데이터 레코드를 DB에서 읽어온다.
+: 읽어온 데이터를 비즈니스 로직에 따라 처리한다.
+: 처리된 데이터를 DB에 반영한다.
+
+* 스프링 부트 배치의 인터페이스
+: ItemReader, ItemProcessor, ItemWriter
+: 데이터를 DB에서 읽어올 때 -> ItemReader
+: 데이터를 처리할 때 -> ItemProcessor
+: 데이터를 DB에 반영할 때 -> ItemWriter
+
+* 스프링 부트 배치의 Commit/Rollback 개수 지정
+: chunk 단위
+(한 번의 트랜잭션 안에서 Commit/Rollback되는 레코드 개수를 지정하는 단위이다.)
+
+* Step, Job
+: Step은 읽고, 처리하고, 반영하는 기본 구조를 정의하는 객체이다.
+: Job은 1개 또는 n개의 Step을 이루어 하나의 단위로 표현한 객체이다.
+
+* 참고 문서
+: https://ahndy84.tistory.com/18
